@@ -41,7 +41,7 @@ function love.draw()
 
     love.graphics.clear(40,45,52,255)
 
-    love.graphics.printf('Hello Pong!', 0, VIRTUAL_HEIGHT/2-6, VIRTUAL_WIDTH, 'center')
+    love.graphics.printf('Hello Pong!', 0, 10, VIRTUAL_WIDTH, 'center')
     
     --render first paddle
     love.graphics.rectangle('fill',10,30,5,20)
