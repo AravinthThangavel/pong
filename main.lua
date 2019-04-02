@@ -5,7 +5,7 @@ Pong Game
 --[[
     Set window width and height
 ]]
-push = requie 'push'
+push = require 'push'
 WINDOW_WIDTH =1280 
 WINDOW_HEIGHT=720
 
