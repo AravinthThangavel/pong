@@ -17,7 +17,7 @@ function love.load()
 end
 
 function love.draw()
-    love.gaphics.printf(
+    love.graphics.printf(
         'Hello Pong!',
         0,
         WINDOW_HEIGHT/2-6,
