@@ -27,7 +27,7 @@ function love.load()
         set font
     ]]
     smallFont = love.graphics.newFont('font.ttf',8)
-    scoreFont = love.graphics.newFont('font.tff',32)
+    scoreFont = love.graphics.newFont('font.ttf',32)
     love.graphics.setFont(smallFont)
 
     push:setupScreen(VIRTUAL_WIDTH,VIRTUAL_HEIGHT,WINDOW_WIDTH, WINDOW_HEIGHT,{
