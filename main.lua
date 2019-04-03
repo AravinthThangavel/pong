@@ -20,6 +20,7 @@ player2Score = 0
 player1Y = 10
 player2Y = VIRTUAL_HEIGHT-50
 
+PADDLE_SPEED=200
 function love.load()
 
     love.graphics.setDefaultFilter('nearest','nearest')
@@ -46,16 +47,16 @@ end
 function love.update(dt)
     -- player 1 movement
     if love.keyboard.isDown('w') then
-        player1Y= player1Y + -player1Y*dt
+        player1Y= player1Y + -PADDLE_SPEED*dt
     elseif love.keyboard.isDown('s') then
-        player1Y= player1Y + player1Y*dt
+        player1Y= player1Y + PADDLE_SPEED*dt
     end
 
     -- player 2 movement
     if love.keyboard.isDown('up') then
-        player2Y= player2Y + -player2Y*dt
+        player2Y= player2Y + -PADDLE_SPEED*dt
     elseif love.keyboard.isDown('down') then
-        player2Y= player2Y + player2Y*dt
+        player2Y= player2Y + PADDLE_SPEED*dt
     end
 end
 
