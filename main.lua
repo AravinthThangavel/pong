@@ -84,7 +84,7 @@ function love.update(dt)
     else
         player2.dy=0
     end
-    if gameState == 'play' then
+    if gamestate == 'play' then
         ball:update(dt)
     end
 
@@ -107,13 +107,10 @@ function love.draw()
     love.graphics.print(tostring(player1Score), VIRTUAL_WIDTH/2-50, VIRTUAL_HEIGHT/3)
     love.graphics.print(tostring(player2Score), VIRTUAL_WIDTH/2+30, VIRTUAL_HEIGHT/3)
     --render first paddle
-    love.graphics.rectangle('fill',10,player1Y,5,20)
+    player1:render()
+    player2:render()
 
-    --render second paddle
-    love.graphics.rectangle('fill', VIRTUAL_WIDTH-10,player2Y,5,20)
-
-    --ball
-    love.graphics.rectangle('fill', ballX,ballY,4,4)
+    ball:render()
 
     push:apply('end')
 end
